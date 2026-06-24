@@ -2,50 +2,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Lato', 'Cinzel', Arial, sans-serif;
 }
 
 .nav-banner {
     background: url('images/vague-fond.png') no-repeat left center / contain;
-    background-color: #0d1c2e;
+    background-color: #ffffff;
     padding: 1rem 0;
     width: 100%;
+    border-bottom: 1px solid #c8321e;
 }
 
 .nav-inner {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     gap: 1rem;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
 }
 
-.nav-link {
-    color: white;
-    text-decoration: none;
-    padding: 8px 12px;
-    margin: 3px;
-    transition: background-color 0.3s;
-    font-weight: bold;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    text-align: center;
-}
-
-.nav-link:hover {
-    background-color: #34495e;
-}
-
-.nav-link.active {
-    background-color: #34495e;
-    color: white;
-}
-
 body {
-    background-color: #1a2a3a;
+    background-color: #f5f5f5;
     color: #333;
     line-height: 1.6;
     min-height: 100vh;
@@ -72,29 +51,18 @@ section {
 }
 
 section h2 {
-    color: #0d1c2e;
+    color: #c8321e;
     margin-bottom: 0.5rem;
 }
 
-/* Reset list styles for content areas */
-.aikido-info ul,
-.aikishintaiso-info ul,
-.practice-info ul,
-.contact-info ul,
-.content ul {
-    list-style-type: disc;
-    padding-left: 2rem;
-    margin-bottom: 1rem;
+ul {
+    list-style-type: none;
+    padding-left: 1.5rem;
 }
 
-.aikido-info ul li,
-.aikishintaiso-info ul li,
-.practice-info ul li,
-.contact-info ul li,
-.content ul li {
-    list-style-type: disc;
-    margin-bottom: 0.5rem;
-    line-height: 1.6;
+ul li {
+    list-style-type: none;
+    margin-bottom: 0.3rem;
 }
 
 .center {
@@ -106,8 +74,38 @@ section h2 {
     font-weight: bold;
     text-align: center;
     margin-bottom: 15px;
-    color: white;
+    color: #c8321e;
     padding: 0 10px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: transparent;
+    padding: 5px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 8px 12px;
+    margin: 3px 4px;
+    transition: color 0.2s;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+nav a:hover {
+    color: #c8321e;
+}
+
+nav a.active {
+    color: #c8321e;
 }
 
 main.container {
@@ -116,71 +114,53 @@ main.container {
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.95);
     border-radius: 8px;
     margin-top: 15px;
     padding: 15px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(200, 50, 30, 0.08);
 }
 
 h1 {
-    color: #1a2a3a;
-    font-size: 1.6rem;
+    color: #c8321e;
+    font-size: 1.8rem;
     margin-bottom: 20px;
-    border-bottom: 2px solid #1a2a3a;
+    border-bottom: 3px solid #c8321e;
     padding-bottom: 10px;
 }
 
 h2 {
     font-size: 1.4rem;
     margin-bottom: 15px;
-    margin-top: 25px;
-    color: #0d1c2e;
+    color: #333;
 }
 
 h3 {
     font-size: 1.2rem;
     margin-bottom: 15px;
-    margin-top: 20px;
-    color: #2c3e50;
-}
-
-h4 {
-    color: #34495e;
-    margin: 15px 0 10px;
-    font-size: 1.1rem;
+    color: #333;
 }
 
 p {
     margin-bottom: 15px;
-    line-height: 1.6;
+}
+
+.aikido-info p,
+.aikishintaiso-info p,
+.contact-info p,
+.practice-info p {
     text-align: left;
 }
 
-/* Blockquote styling */
-blockquote {
-    background-color: #f9f9f9;
-    border-left: 4px solid #0d1c2e;
-    padding: 15px 20px;
-    margin: 20px 0;
-    font-style: italic;
+.aikido-info ul,
+.aikishintaiso-info ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
 }
 
-blockquote p {
-    margin-bottom: 10px;
-    color: #333;
-}
-
-blockquote footer {
-    text-align: right;
-    font-style: normal;
-    font-weight: bold;
-    color: #0d1c2e !important;
-    background-color: transparent !important;
-    margin-top: 10px;
-    padding: 0 !important;
-    font-size: 0.95rem !important;
-    width: auto !important;
+.aikido-info ul li,
+.aikishintaiso-info ul li {
+    list-style-type: disc;
 }
 
 .facebook-posts {
@@ -195,6 +175,7 @@ blockquote footer {
     border-radius: 8px;
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-left: 4px solid #c8321e;
 }
 
 .post-header {
@@ -236,8 +217,9 @@ blockquote footer {
     background-color: white;
     border-radius: 8px;
     padding: 30px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(200, 50, 30, 0.1);
     margin-bottom: 30px;
+    border-left: 4px solid #c8321e;
 }
 
 .practice-schedule {
@@ -253,7 +235,9 @@ blockquote footer {
 }
 
 .practice-schedule th {
-    background-color: #f2f2f2;
+    background-color: #c8321e;
+    color: white;
+    font-weight: 600;
 }
 
 .practice-schedule tr:nth-child(even) {
@@ -274,14 +258,20 @@ blockquote footer {
 .form-group label {
     margin-bottom: 5px;
     font-weight: bold;
+    color: #333;
 }
 
 .form-group input, .form-group textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     border-radius: 4px;
     font-size: 1rem;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #c8321e;
+    outline: none;
 }
 
 .form-group textarea {
@@ -289,26 +279,28 @@ blockquote footer {
 }
 
 button {
-    background-color: #1a2a3a;
+    background-color: #c8321e;
     color: white;
     border: none;
-    padding: 12px 20px;
-    border-radius: 4px;
+    padding: 12px 24px;
+    border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #34495e;
+    background-color: #a01f14;
 }
 
 footer {
-    background-color: #1a2a3a;
+    background-color: #f0f0f0;
     text-align: center;
-    padding: 15px 10px;
+    padding: 20px 10px;
     margin-top: auto;
     width: 100%;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 }
 
 /* Dojo Cards Styles */
@@ -323,28 +315,29 @@ footer {
     margin: 10px;
     background-color: white;
     border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(200, 50, 30, 0.1);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    border-left: 5px solid #c8321e;
 }
 
 .dojo-card h2 {
-    color: #1a2a3a;
+    color: #c8321e;
     margin-bottom: 15px;
     font-size: 1.5rem;
 }
 
 .dojo-card h3 {
-    color: #2c3e50;
+    color: #333;
     margin: 20px 0 10px;
     font-size: 1.2rem;
+    border-bottom: 2px solid #c8321e;
+    padding-bottom: 5px;
 }
 
 .dojo-card h4 {
-    color: #34495e;
+    color: #555;
     margin: 15px 0 10px;
     font-size: 1.1rem;
 }
@@ -352,20 +345,17 @@ footer {
 .dojo-card p {
     margin-bottom: 10px;
     line-height: 1.5;
-    text-align: center;
+    text-align: left;
 }
 
 .dojo-card ul {
-    list-style-type: none;
-    padding-left: 0;
+    list-style-type: disc;
+    padding-left: 20px;
     margin-bottom: 15px;
-    width: 100%;
 }
 
 .dojo-card ul li {
     margin-bottom: 8px;
-    list-style-type: none;
-    text-align: left;
 }
 
 /* Media Queries */
@@ -374,8 +364,8 @@ footer {
         font-size: 2rem;
     }
     
-    .nav-link {
-        padding: 10px 15px;
+    nav a {
+        padding: 12px 18px;
         font-size: 1rem;
     }
     
@@ -395,13 +385,14 @@ footer {
         margin-bottom: 20px;
     }
     
-    .nav-inner {
-        padding: 0;
+    nav {
+        padding: 10px 0;
     }
     
-    .nav-link {
-        padding: 10px 20px;
-        margin: 0 5px;
+    nav a {
+        padding: 12px 20px;
+        margin: 0 8px;
+        flex: none;
     }
     
     .facebook-posts {
@@ -416,20 +407,22 @@ footer {
     }
     
     h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 }
 
 @media (min-width: 1024px) {
     .dojo-list {
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 20px;
     }
 
     .dojo-card {
-        flex: 1 1 calc(33.333% - 20px);
-        max-width: calc(33.333% - 20px);
+        flex: 0 0 calc(33.333% - 14px);
+        max-width: calc(33.333% - 14px);
+        margin: 0;
     }
 }
 
@@ -442,6 +435,7 @@ footer {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin: 15px auto;
     max-width: 600px;
+    border-left: 4px solid #c8321e;
 }
 
 .loading-message p {
@@ -481,7 +475,7 @@ footer {
     text-align: center;
     font-size: 1.1em;
     margin-bottom: 30px;
-    color: #2c3e50;
+    color: #333;
 }
 
 .facebook-posts {
@@ -511,11 +505,16 @@ footer {
     padding: 20px;
     margin-bottom: 30px;
     text-align: center;
+    border-left: 4px solid #c8321e;
 }
 
 #facebook-plugin {
     max-width: 500px;
     margin: 0 auto;
+}
+
+.loading-message {
+    display: none;
 }
 
 @media (max-width: 768px) {
@@ -593,7 +592,7 @@ iframe {
     height: 20px;
     margin-right: 10px;
     border: 3px solid #ddd;
-    border-top-color: #3b5998;
+    border-top-color: #c8321e;
     border-radius: 50%;
     animation: spinner 1s linear infinite;
 }
@@ -607,11 +606,12 @@ iframe {
     padding: 15px;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(200, 50, 30, 0.1);
     width: 100%;
     box-sizing: border-box;
     opacity: 0;
     animation: fadeIn 0.5s forwards;
+    border-left: 4px solid #c8321e;
 }
 
 @keyframes fadeIn {
@@ -673,6 +673,7 @@ iframe {
 .post-content p {
     margin-top: 0;
     word-wrap: break-word;
+    text-align: left;
 }
 
 .post-image {
@@ -686,9 +687,10 @@ iframe {
 .post-link {
     display: inline-block;
     margin-top: 10px;
-    color: #3b5998;
+    color: #c8321e;
     text-decoration: none;
     font-size: 14px;
+    font-weight: 600;
 }
 
 .post-link:hover {
@@ -697,7 +699,7 @@ iframe {
 
 .error-message {
     background-color: #fff8f8;
-    border-left: 3px solid #ffcccb;
+    border-left: 3px solid #c8321e;
 }
 
 .error-message p {
@@ -705,17 +707,17 @@ iframe {
 }
 
 .error-message a {
-    color: #3b5998;
+    color: #c8321e;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .error-message a:hover {
     text-decoration: underline;
 }
 
-/* Make sure Facebook plugin and our custom posts don't show at the same time */
+/* Facebook plugin styling */
 .fb-page-container {
-    display: none;
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
@@ -739,7 +741,8 @@ iframe {
     border-radius: 8px;
     text-align: center;
     margin-top: 20px;
-    border: 1px solid #e9ecef;
+    border: 1px solid #c8321e;
+    border-left: 4px solid #c8321e;
 }
 
 .static-fallback-message p {
@@ -748,7 +751,7 @@ iframe {
 }
 
 .static-fallback-message a {
-    color: #3b5998;
+    color: #c8321e;
     font-weight: bold;
     text-decoration: none;
 }
@@ -802,31 +805,31 @@ footer {
     padding: 2rem 1rem;
     text-align: center;
     font-size: 0.95rem;
-    color: #fff;
+    color: #333;
 }
 
 .footer-card {
     background-color: #ffffff;
-    border: 1px solid #ccc;
+    border: 2px solid #c8321e;
     border-radius: 12px;
-    padding: 1.2rem 1.5rem;
+    padding: 1.5rem;
     margin: 0 auto 1.5rem;
     max-width: 600px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    color: #111;
+    box-shadow: 0 4px 12px rgba(200, 50, 30, 0.15);
+    color: #333;
 }
 
 .footer-card h4 {
     margin: 0;
     font-size: 1rem;
     font-weight: normal;
-    color: #111;
+    color: #333;
 }
 
 .footer-card a {
-    color: #0074cc;
+    color: #c8321e;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .footer-card a:hover {
@@ -835,12 +838,12 @@ footer {
 
 .footer-copy {
     font-size: 0.85rem;
-    color: #ccc;
+    color: #666;
 }
 
 .footer-highlight {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #111;
+    color: #333;
     margin: 0;
 }
