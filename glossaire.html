@@ -8,19 +8,24 @@
 </head>
 <body>
     <header>
-        <header>
-            <nav class="nav-banner">
-                <div class="nav-inner">
-                  <a href="index.html" class="nav-link">Accueil</a>
-                  <a href="aikido.html" class="nav-link">Aikido</a>
-                  <a href="aikishintaiso.html" class="nav-link">Aïkishintaïso</a>
-                  <a href="ou-pratiquer.html" class="nav-link">Où Pratiquer</a>
-                  <a href="glossaire.html" class="nav-link">Glossaire</a>
-                  <a href="informations-complementaires.html" class="nav-link">Infos</a>
-                  <a href="contact.html" class="nav-link">Contact</a>
-                </div>
-              </nav>
-          </header>
+        <nav class="nav-banner">
+            <div class="nav-inner">
+              <a href="index.html" class="nav-logo-link">
+                <img src="images/Logo-KAKKHR_200.png" alt="Aikido Kobayashi" class="nav-logo">
+              </a>
+              <button class="nav-menu-btn" aria-expanded="false" aria-controls="nav-links">Menu</button>
+              <div class="nav-links" id="nav-links">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="aikido.html" class="nav-link">Aikido</a>
+                <a href="aikishintaiso.html" class="nav-link">Aïkishintaïso</a>
+                <a href="ou-pratiquer.html" class="nav-link">Où Pratiquer</a>
+                <a href="glossaire.html" class="nav-link">Glossaire</a>
+                <a href="informations-complementaires.html" class="nav-link">Infos</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+              </div>
+            </div>
+        </nav>
+    </header>
     <main class="container">
         <div class="content">
         <h1>Glossaire – Le japonais sur les tatamis</h1>
@@ -48,12 +53,83 @@
         </section>
 
         <section>
-            <h2>Le Dojo</h2>
+            <h2>Le Dojo – Orientation et placement</h2>
+             <div class="aikido-info">
+            <h2>Plan du dojo – Orientation et placement</h2>
+            <p style="text-align:left;">Le dojo est organisé selon quatre côtés aux rôles précis. Ce schéma montre la disposition vue du dessus.</p>
+
+            <svg viewBox="0 0 540 460" xmlns="http://www.w3.org/2000/svg"
+                 style="width:100%;max-width:540px;display:block;margin:1rem auto;"
+                 role="img" aria-label="Plan du dojo : orientation et placement par grade">
+                <!-- Dojo floor -->
+                <rect x="60" y="30" width="420" height="380" fill="#fdf6e3" stroke="#8b7355" stroke-width="3" rx="6"/>
+                <!-- Kamiza band -->
+                <rect x="60" y="30" width="420" height="70" fill="#c8321e" opacity="0.12" rx="6"/>
+                <text x="270" y="58" text-anchor="middle" font-family="Georgia,serif" font-size="17" font-weight="bold" fill="#c8321e">KAMIZA</text>
+                <text x="270" y="76" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#a00">Mur principal · tokonoma · autel</text>
+                <!-- Shimoza band -->
+                <rect x="60" y="340" width="420" height="70" fill="#1a2a3a" opacity="0.08" rx="6"/>
+                <text x="270" y="370" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-weight="bold" fill="#1a2a3a">SHIMOZA</text>
+                <text x="270" y="388" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#444">Côté des élèves · on s'aligne ici pour les saluts</text>
+                <!-- Joseki (right) -->
+                <rect x="440" y="100" width="40" height="240" fill="#c8321e" opacity="0.07" rx="4"/>
+                <text x="460" y="220" text-anchor="middle" font-family="Georgia,serif" font-size="13" font-weight="bold" fill="#c8321e" transform="rotate(90 460 220)">JOSEKI — grades élevés →</text>
+                <!-- Shimoseki (left) -->
+                <rect x="60" y="100" width="40" height="240" fill="#888" opacity="0.08" rx="4"/>
+                <text x="80" y="220" text-anchor="middle" font-family="Georgia,serif" font-size="13" font-weight="bold" fill="#555" transform="rotate(-90 80 220)">← débutants — SHIMOSEKI</text>
+                <!-- Sensei -->
+                <circle cx="270" cy="150" r="28" fill="#c8321e" opacity="0.85"/>
+                <text x="270" y="147" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="white">Sensei</text>
+                <text x="270" y="162" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="white">●</text>
+                <!-- Dashed arrow -->
+                <line x1="270" y1="305" x2="270" y2="195" stroke="#c8321e" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.4"/>
+                <polygon points="270,185 264,200 276,200" fill="#c8321e" opacity="0.4"/>
+                <text x="290" y="255" font-family="Arial,sans-serif" font-size="10" fill="#c8321e" opacity="0.7">regard</text>
+                <!-- Students right→left: senior to junior -->
+                <circle cx="400" cy="315" r="22" fill="#1a2a3a" opacity="0.75"/>
+                <text x="400" y="312" text-anchor="middle" font-size="10" font-family="Arial,sans-serif" fill="white" font-weight="bold">5e dan</text>
+                <text x="400" y="326" text-anchor="middle" font-size="9" font-family="Arial,sans-serif" fill="#ddd">● ●</text>
+                <circle cx="345" cy="315" r="22" fill="#1a2a3a" opacity="0.65"/>
+                <text x="345" y="312" text-anchor="middle" font-size="10" font-family="Arial,sans-serif" fill="white" font-weight="bold">4e dan</text>
+                <text x="345" y="326" text-anchor="middle" font-size="9" font-family="Arial,sans-serif" fill="#ccc">● ●</text>
+                <circle cx="290" cy="315" r="22" fill="#4a5a6a" opacity="0.75"/>
+                <text x="290" y="319" text-anchor="middle" font-size="10" font-family="Arial,sans-serif" fill="white">3e kyu</text>
+                <circle cx="235" cy="315" r="22" fill="#4a5a6a" opacity="0.60"/>
+                <text x="235" y="319" text-anchor="middle" font-size="10" font-family="Arial,sans-serif" fill="white">2e kyu</text>
+                <circle cx="180" cy="315" r="22" fill="#888" opacity="0.65"/>
+                <text x="180" y="319" text-anchor="middle" font-size="10" font-family="Arial,sans-serif" fill="white">1er kyu</text>
+                <circle cx="125" cy="315" r="22" fill="#aaa" opacity="0.6"/>
+                <text x="125" y="319" text-anchor="middle" font-size="10" font-family="Arial,sans-serif" fill="white">déb.</text>
+                <!-- Grade order arrow -->
+                <line x1="105" y1="415" x2="420" y2="415" stroke="#333" stroke-width="1.5"/>
+                <polygon points="420,411 420,419 430,415" fill="#333"/>
+                <text x="267" y="432" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#333">grades croissants (Shimoseki → Joseki)</text>
+                <!-- North label -->
+                <text x="270" y="22" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#c8321e">▲ Nord (conventionnel)</text>
+            </svg>
+
+            <p style="text-align:left;font-size:0.9rem;color:#555;">
+                <strong>Lecture :</strong> Le Sensei enseigne depuis le Kamiza (haut). Les élèves s'alignent sur le Shimoza (bas),
+                les plus gradés à droite côté <em>Joseki</em>, les moins gradés à gauche côté <em>Shimoseki</em>.
+                Tous font face au Kamiza lors des saluts collectifs.
+            </p>
+        </div>
+            <p>Le dojo est organisé selon quatre côtés aux rôles précis :</p>
             <ul>
-                <li>Kamisa : mur des Kamis (Est, siège du professeur)</li>
-                <li>Shimosa : mur des élèves</li>
-                <li>Joseki : côté des invités d'honneur</li>
-                <li>Shimoseki : pour les visiteurs non pratiquants</li>
+                <li><strong>Kamiza (上座)</strong> – « Siège d'en haut » : mur principal, généralement à l'Est. C'est là que se trouve l'autel (tokonoma) et que le Sensei enseigne. On s'incline en entrant et en sortant du tatami, face au Kamiza.</li>
+                <li><strong>Shimoza (下座)</strong> – « Siège d'en bas » : mur opposé au Kamiza, côté des élèves. Les pratiquants s'y alignent pour les saluts collectifs, les plus gradés côté Joseki.</li>
+                <li><strong>Joseki (上席)</strong> – « Siège d'honneur » : côté latéral à la droite du Sensei (vu de face). Les pratiquants les plus gradés s'y placent, en ordre décroissant de grade vers le Shimoseki.</li>
+                <li><strong>Shimoseki (下席)</strong> – Côté opposé au Joseki, à la gauche du Sensei. Réservé aux élèves les moins gradés et aux visiteurs non pratiquants.</li>
+            </ul>
+            <p><em>Règle lors des saluts collectifs : on s'aligne sur le Shimoza, du plus gradé (côté Joseki) au moins gradé (côté Shimoseki), debout ou en seiza face au Kamiza.</em></p>
+        </section>
+
+        <section>
+            <h2>Aï Hanmi et Gyaku Hanmi</h2>
+            <p>Ces deux gardes s'appliquent toutes deux au <strong>katate dori</strong> (saisie du poignet à une main). La différence est la position des pieds :</p>
+            <ul>
+                <li><strong>Aï Hanmi</strong> – Les deux partenaires ont le <em>même</em> pied avancé (ex. : tous les deux pied droit devant). La garde est en miroir.</li>
+                <li><strong>Gyaku Hanmi</strong> – Les partenaires ont des pieds <em>opposés</em> (l'un pied droit, l'autre pied gauche devant). La garde est croisée.</li>
             </ul>
         </section>
 
@@ -114,9 +190,9 @@
             </ul>
             <h3>Attaques</h3>
             <ul>
-                <li>Men ushi</li>
-                <li>Yokomen ushi</li>
-                <li>Kata dori men ushi</li>
+                <li>Men uchi</li>
+                <li>Yokomen uchi</li>
+                <li>Kata dori men uchi</li>
                 <li>Tsuki – Gedan / Chudan / Jodan</li>
                 <li>Mae geri</li>
                 <li>Kaeshi</li>
@@ -146,6 +222,18 @@
                 <li>Ikkyo, Nikkyo, Sankyo, Yonkyo, Gokyo</li>
                 <li>Nage, Ko, Kyu, Kaiten, Koshi, Ten, Chi, Kote, Gaeshi, Shiho, Yoko</li>
                 <li>Kokyu nage, Kaiten nage, Koshi nage, Tenchi nage, Kotegaeshi, Shiho nage, Irimi, Yoko irimi</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Suffixes et racines fréquents</h2>
+            <ul>
+                <li><strong>Dori / Tori</strong> – Saisie (action de saisir : katate <em>dori</em>, ryote <em>dori</em>…)</li>
+                <li><strong>Uchi</strong> – Frappe (coup porté avec la main ou une arme : shomen <em>uchi</em>, yokomen <em>uchi</em>…)</li>
+                <li><strong>Tsuki</strong> – Coup direct, poussée en ligne droite (coup de poing ou de bâton)</li>
+                <li><strong>Nage</strong> – Projection (celui qui projette ; désigne aussi la technique : irimi <em>nage</em>, shiho <em>nage</em>…)</li>
+                <li><strong>Waza</strong> – Technique (suwari <em>waza</em> = techniques à genoux ; tachi <em>waza</em> = debout)</li>
+                <li><strong>Hanmi</strong> – Garde (position du corps de profil, un pied avancé : aï <em>hanmi</em>, gyaku <em>hanmi</em>)</li>
             </ul>
         </section>
 
@@ -193,7 +281,8 @@
             <a href="https://www.aikido.fr" target="_blank" rel="noopener">aikido.fr</a>.
           </p>
         </div>
-        <p class="footer-copy">&copy; 2025 Aikido Alpes-Maritimes – Tous droits réservés</p>
+        <p class="footer-copy">&copy; 2025 Aikido Alpes-Maritimes</p>
       </footer>
+    <script src="script.js"></script>
 </body>
 </html>
