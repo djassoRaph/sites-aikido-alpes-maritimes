@@ -1,3 +1,3 @@
 <IfModule mod_headers.c>
-  Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://connect.facebook.net https://maps.googleapis.com https://www.gstatic.com; style-src 'self' 'unsafe-inline'; frame-src https://www.facebook.com https://staticxx.facebook.com https://www.google.com https://maps.google.com https://www.gstatic.com;"
+  Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://connect.facebook.net https://maps.googleapis.com https://www.gstatic.com; style-src 'self' 'unsafe-inline'; frame-src https://www.facebook.com https://staticxx.facebook.com https://www.google.com https://calendar.google.com https://maps.google.com https://www.gstatic.com;"
 </IfModule>

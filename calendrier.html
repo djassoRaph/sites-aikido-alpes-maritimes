@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendrier – Aikido Alpes-Maritimes</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .cal-frame {
+            width: 100%;
+            height: 640px;
+            border: 0;
+            border-radius: 6px;
+        }
+        @media (max-width: 768px) {
+            .cal-frame {
+                height: 560px;
+            }
+        }
+        .cal-btn {
+            display: inline-block;
+            margin: 0.4em 0.5em 0.4em 0;
+            padding: 0.6em 1.2em;
+            background: #C8321E;
+            color: #fff;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .cal-btn:hover {
+            background: #1A2A3A;
+        }
+    </style>
+    </head>
+<body>
+    <header>
+        <nav class="nav-banner">
+            <div class="nav-inner">
+              <a href="index.html" class="nav-logo-link">
+                <img src="images/Logo-KAKKHR_200.png" alt="Aikido Kobayashi" class="nav-logo">
+              </a>
+              <button class="nav-menu-btn" aria-expanded="false" aria-controls="nav-links">Menu</button>
+              <div class="nav-links" id="nav-links">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="aikido.html" class="nav-link">Aikido</a>
+                <a href="aikishintaiso.html" class="nav-link">Aïkishintaïso</a>
+                <a href="ou-pratiquer.html" class="nav-link">Où Pratiquer</a>
+                <a href="calendrier.html" class="nav-link">Calendrier</a>
+                <a href="glossaire.html" class="nav-link">Glossaire</a>
+                <a href="informations-complementaires.html" class="nav-link">Infos</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+              </div>
+            </div>
+          </nav>
+      </header>
+    <main class="container">
+        <h1>Calendrier</h1>
+        <p>Retrouvez ici l'agenda du club et les formations nationales.</p>
+
+        <section>
+            <h2>Agenda du club — Alpes-Maritimes (06)</h2>
+            <iframe class="cal-frame"
+                src="https://calendar.google.com/calendar/embed?src=c94e10d510f4d8e1fdb1b54522113abe4d57f89b5ee574a8ad05fc4ae5ce9898%40group.calendar.google.com&ctz=Europe%2FParis"
+                title="Agenda du club Aikido Alpes-Maritimes"></iframe>
+        </section>
+
+        <section>
+            <h2>Formations nationales (Académie / 3AKH)</h2>
+            <iframe class="cal-frame"
+                src="https://calendar.google.com/calendar/embed?src=eremp1879h2fts6ph8jc1vnop8%40group.calendar.google.com&ctz=Europe/Paris"
+                title="Formations nationales Aikido"></iframe>
+        </section>
+
+        <section>
+            <h2>Ajouter à votre agenda personnel</h2>
+            <p><strong>Agenda du club (06)</strong></p>
+            <p>
+                <a class="cal-btn"
+                    href="https://www.google.com/calendar/ical/c94e10d510f4d8e1fdb1b54522113abe4d57f89b5ee574a8ad05fc4ae5ce9898%40group.calendar.google.com/public/basic.ics">
+                    S'abonner à l'agenda du club (ICS)
+                </a>
+                <a class="cal-btn"
+                    href="https://calendar.google.com/calendar/embed?src=c94e10d510f4d8e1fdb1b54522113abe4d57f89b5ee574a8ad05fc4ae5ce9898%40group.calendar.google.com&ctz=Europe%2FParis"
+                    target="_blank" rel="noopener">
+                    Ouvrir dans Google Agenda
+                </a>
+            </p>
+            <p><strong>Formations nationales (Académie / 3AKH)</strong></p>
+            <p>
+                <a class="cal-btn"
+                    href="https://www.google.com/calendar/ical/eremp1879h2fts6ph8jc1vnop8%40group.calendar.google.com/public/basic.ics">
+                    S'abonner aux formations nationales (ICS)
+                </a>
+                <a class="cal-btn"
+                    href="https://calendar.google.com/calendar/embed?src=eremp1879h2fts6ph8jc1vnop8%40group.calendar.google.com&ctz=Europe/Paris"
+                    target="_blank" rel="noopener">
+                    Ouvrir dans Google Agenda
+                </a>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-card">
+          <p class="footer-highlight">
+            Pour davantage d'informations sur l'aïkido en France et notre école,<br>
+            rendez-vous sur
+            <a href="https://www.aikido.fr" target="_blank" rel="noopener">aikido.fr</a>.
+          </p>
+        </div>
+        <p class="footer-copy">&copy; 2025 Aikido Alpes-Maritimes</p>
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html>
